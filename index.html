@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .nav {
+      width: 100%;
+      background: #373737 !important;
+    }
+
+    .fix-img {
+      background-attachment: fixed;
+      background-size: cover;
+      min-height: 300px;
+    }
+
+
+
+
+    .square-card {
+      background: #ff4255 !important;
+      right: 0;
+      bottom: 0;
+      margin-bottom: -4%;
+
+
+    }
+
+    .service-cardsub p {
+      color: gray;
+      font-size: 2vh;
+      font-weight: 300;
+
+    }
+
+    .service-cardicon {
+      color: gray;
+      font-size: 2vh;
+      font-weight: 300;
+
+
+    }
+
+
+
+    .inactive {
+      color: white !important;
+      font-weight: 500;
+      font-size: 2vh;
+
+      text-align: center;
+    }
+
+    .active {
+      color: #ff4255 !important;
+
+
+    }
+
+    .element a:hover {
+      color: #ff4255 !important;
+    }
+
+    .banner-overlay {
+      color: aliceblue;
+
+    }
+
+    .button a {
+      background: #ff4255;
+      color: aliceblue;
+
+
+    }
+
+
+    .service-card h4 {
+      color: #ff4255;
+    }
+
+    .service-card p {
+      color: gray;
+      text-align: justify;
+
+
+    }
+
+    .service-cardsub {
+      border-left: 6px solid #ff4255;
+    }
+
+
+    .service-card-button a {
+      background: #ff4255 !important;
+      color: white;
+      border-radius: 0;
+    }
+
+    .service-cardicon i {
+      color: #ff4255;
+    }
+
+    .service-cardicon {
+      text-align: justify;
+    }
+
+    .service-card-button2 a {
+      background: #ff4255 !important;
+      color: white !important;
+    }
+
+    .service1 h5 {
+      color: #ff4255;
+    }
+
+    .service1 p {
+      color: gray;
+      text-align: justify;
+
+
+    }
+
+    .service1 a {
+      background-color: #ff4255;
+      color: white;
+      border-radius: 0;
+    }
+
+    .square h4 {
+      color: white;
+      text-align: justify;
+
+    }
+
+    .square h5 {
+      color: white;
+    }
+
+    .project p {
+      color: gray;
+
+    }
+
+    .project_card p {
+      color: gray;
+    }
+
+    .footer i {
+      color: #ff4255;
+    }
+
+    .solution {
+      color: white;
+    }
+
+    .solution h3 {
+      text-align: center;
+    }
+
+    .solution p {
+      text-align: center;
+      text-align: justify;
+    }
+
+    .client-img img {
+      border-radius: 50%;
+      width: 80px;
+      border: 3px solid white;
+    }
+
+    @media (max-width: 575.98px) {
+      .banner-overlay h1 {
+        font-size: 17px !important;
+      }
+
+      .banner-overlay p {
+        font-size: 10px !important;
+      }
+    }
+
+    @media (min-width: 575.98px) and (max-width: 768px) {}
+
+    @media (min-width:768px) and (max-width: 991.98px) {
+      .client p {
+        font-size: 2vh;
+      }
+    }
+
+    @media (min-width: 1199.98px) {}
+
+    .service {
+      background: white;
+    }
+
+    body i {
+      color: #ff4255;
+    }
+
+    .service p {
+      color: gray;
+    }
+
+
+    .service:hover,
+    .service:hover h4,
+    .service:hover p,
+    .service:hover i {
+      background: #ff4255 !important;
+      color: white !important;
+    }
+
+    .logo {
+      max-width: 160px;
+      max-height: 60px;
+    }
+
+    .logo img {
+      width: 100% !important;
+    }
+
+    .humburger {
+      background: #ff4255 !important;
+      width: 35px !important;
+      height: 30px !important;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus,
+    .humburger {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .navbar-dark.color-changed {
+      background-color: rgb(106, 144, 160) !important;
+    }
+  </style>
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <script src="bootstrap.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>$(document).ready(function () {
+      $(".element a").click(function () {
+        $(".element").find('.active').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('.navbar-dark > button').on('click', function () {
+        $('.navbar-dark').toggleClass('color-changed');
+      });
+
+    });
+
+  </script>
+</head>
+
+<body>
+  <header class="header" style='position: absolute;z-index: 3; width:100%;opacity: 0.9;'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark pt-3 pb-3" style="padding-left: 40px; padding-right:40px;">
+
+      <a class="navbar-brand logo p-0 h-100" href="#"><img src="logo.png"></a>
+      <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="humburger navbar-toggler-icon text-center"><i class="fas pt-1 fa-bars text-white"></i></span>
+
+      </button>
+      <div class="collapse navbar-collapse p-auto justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link  active p-1 p-sm-2 p-md-3 ps-md-5 pe-md-5 inactive " aria-current="page"
+              href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-sm-3 p-md-3 ps-md-5 pe-md-5 inactive" href="product.html">PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-sm-3 p-md-3 ps-md-5 pe-md-5 inactive" href="service.html">SERVICES</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-sm-3 p-md-3 ps-md-5 pe-md-5 inactive" href="aboutUs.html">ABOUT US</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-sm-3 p-md-3 ps-md-5 pe-md-5 inactive" href="contactUs.html">CONTACT US</a>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+
+
+    <div class="container-fluid me-0 ms-0 p-0 ">
+      <div class="row m-0 p-0">
+        <div class="col-12 p-0 p-0">
+          <div class="position-relative h-100">
+
+            <div class="w-100" style="background-size: cover;width: 100;background-position: center;">
+
+              <img src="banner1.jpeg" class="img-fluid w-100 ">
+            </div>
+
+
+            <div class=" position-absolute w-100 h-100"
+              style="z-index: 1;left: 0;top: 0;background:rgba(0, 0, 0, 0.5) !important">
+              <div class="col-12 col-sm-12 col-md-9 col-lg-6 p-2 pt-5  mt-4 mt-sm-4 pt-md-3 p-lg-5  mt-lg-5 banner-overlay">
+
+                <h1 class="mt-md-5" style="text-align: justify;">We build software solutions to empower your business
+                  and
+                  drive success and
+                  growth.</h1>
+                <p style="text-align:justify;">We design software products motivated by the desire to enable you to use
+                  the
+                  power of digital
+                  technology
+                  to
+                  reach your business goals. Our work is backed by years of extensive industry experience and in-depth
+                  domain-specific expertise and insights. Our diverse cross-functional professional team consists of
+                  expert
+                  software architects, designers, managers, and engineers.</p>
+                <div class="button d-none d-sm-none d-md-block
+                ">
+
+                  <a href="#" class="btn  p-sm-2">CONTACT US</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+  <div class="container p-0 mt-5">
+    <div class="row m-0">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 me-auto ms-auto mt-2 pb-3">
+        <div class="card service text-center p-2 h-100 shadow-lg p-3 mb-2 bg-body rounded border-0">
+          <div class="card-icon">
+            <i class="fas fa-user fs-1 "></i>
+          </div>
+          <div class="card-title ">
+            <h4>eCommerce Development</h4>
+          </div>
+          <div class="card-body pt-3 pb-3">
+            <p>We build fully customized e-commerce portals that offer a seamless and error-free user experience.
+
+            </p>
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 ms-auto mt-2 pb-3">
+        <div class="card service  text-center p-2 h-100 shadow-lg p-3 mb-2 bg-body rounded border-0">
+          <div class="card-icon">
+            <i class="fas fa-user fs-1 "></i>
+          </div>
+          <div class="card-title ">
+            <h4>Online Delivery Management</h4>
+          </div>
+          <div class="card-body ">
+            <p>To track every pulse of the online delivery business and provide the best service to the customer.
+
+
+
+            </p>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 ms-auto mt-2 pb-3">
+        <div class="card service text-center p-2 h-100 shadow-lg p-3 mb-2 bg-body rounded border-0">
+          <div class="card-icon">
+            <i class="fas fa-user fs-1 "></i>
+          </div>
+          <div class="card-title ">
+            <h4>Project Management System
+            </h4>
+          </div>
+          <div class="card-body">
+            <p>Plan, monitor, and execute your projects with utmost efficiency and coordination with our Project
+              Management Software Solutions.
+
+            </p>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container p-0">
+    <div class="row  m-0">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-0">
+        <div class="card">
+
+          <img src="team-870x1024 (1).jpeg" class="img-fluid ">
+
+          <div class=" card border-0 rounded-0 w-50 text-white position-absolute"
+            style="background:#ff4255; right: 0;bottom: 0;margin-bottom: -4%;">
+            <div class="card-icon quote text-end pe-3" style="transform: translateY(-20px);">
+              <i class="fas fa-quote-right fs-1 text-white" style="color: white;"></i>
+            </div>
+
+
+            <div class="fst-italic p-1 text-center" style="transform: translateY(-20px);">
+
+              <p class="text-white" style="font-size: 13px;">Our experts are always well equipped to make the
+                most innovative and easy to
+                use products for you
+              </p>
+              <p class="fst-italic ps-2 pe-2 pt-1  pb-0 mb-0 text-white">AJITH K K – CEO Yesvalue
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-0  pt-5 pt-lg-0 pt-mg-0">
+        <div class="col-12">
+
+          <div class="card service-card border-0">
+            <div class="card-title m-3 mt-5 mt-lg-0">
+              <h4>ABOUT US
+              </h4>
+              <h3>We're an IT partner that cares about your needs and works to fulfill them
+              </h3>
+
+            </div>
+            <div class="card-body p-0 m-3 ">
+              <p>As a prominent software solutions provider in Kerala, Yes Value has dealt with a comprehensive range of
+                clients and provided satisfactory technical solutions. We offer multifarious panoply of Software
+                Services
+                to complement all the digital needs of your business.
+
+              </p>
+            </div>
+          </div>
+          <div class="col-12 pb-2">
+            <div class="service-cardsub ms-3 me-3">
+              <div class="pe-4 ps-4">
+                <h6>Yesvalue Software solutions is the best and most trusted web and software development company based
+                  in
+                  Kozhikode</h6>
+                <p class="mb-0">We are committed to offer customer-oriented services and work with our clients as an
+                  extended part of
+                  their professional team. With us, quality is not the only thing that comes guaranteed. We are
+                  determined
+                  to hold on to our reputation as an affordable, trusted, and responsible service provider and hope to
+                  extend our name beyond national boundaries.
+
+                  From one of the best online delivery app developers in Kerala, top-quality online delivery app
+                  designer
+                  in Calicut, reliable social media marketing strategist, to best-in-breed ERP software solutions
+                  provider, we are known to our loyal client base with many names.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-button m-auto pb-2">
+
+            <a href="#" class="btn  p-2 ">GET STARTED</a>
+          </div>
+          <p class=" mb-1 ms-3 service-cardicon"><i class="fas fa-check p-1 pe-2 " aria-hidden="true"></i>Guaranteed
+            Quality, Timely Delivery, & In-budget Services </p>
+          <p class=" mb-1 ms-3  service-cardicon"><i class="fas fa-check p-1 pe-2 " aria-hidden="true"></i>Round The
+            Clock Customer Support </p>
+          <p class=" mb-1 ms-3 service-cardicon"><i class="fas fa-check p-1 pe-2  " aria-hidden="true"></i>Experienced
+            staff consisting of some of the best minds in the industry </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container p-0 mt-5">
+    <div class="row m-0">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-3">
+        <div class="card border-0 h-100 service1  pb-0">
+          <div class="card-title">
+            <h5>OUR SERVICES
+            </h5>
+            <h6>Solutions & Focus Areas
+            </h6>
+            <div class="card-body p-0">
+              <p class="p-0">We boast a comprehensive and thorough service portfolio that is regularly updated to suit
+                evolving and
+                expanding industry demands
+
+              </p>
+              <div class="w-auto ">
+
+                <a href="#" class="btn service-card-button2  p-2 ">GET STARTED</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-3">
+        <div class="card text-center service h-100 shadow-lg p-0 bg-body rounded border-0">
+          <div class="card-icon p-3">
+            <i class="fas fa-laptop-code fs-1"></i>
+          </div>
+          <div class="card-title">
+            <h6>Custom Web Application Development</h6>
+          </div>
+          <div class="card-body">
+            <p>Our experienced team of software experts develops Web Applications that are dynamic, innovative, user
+              friendly, and promote maximum user engagement.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-3">
+        <div class="card text-center  h-100 shadow-lg p-0 bg-body rounded border-0 service">
+          <div class="card-icon p-3">
+            <i class="fas fa-file-invoice-dollar fs-1"></i>
+          </div>
+          <div class="card-title">
+            <h6>ERP Software Development
+            </h6>
+          </div>
+          <div class="card-body">
+            <p>Management made easy with our carefully crafted enterprise resource planning software solutions. Supply
+              Chain, Procurement, HR, and Finance manage every operation from one place.
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-3">
+        <div class="card text-center  h-100 shadow-lg p-0 bg-body rounded border-0 service">
+          <div class="card-icon p-3">
+            <i class="fab fa-android  fs-1"></i>
+          </div>
+          <div class="card-title">
+            <h6>Android Development
+            </h6>
+          </div>
+          <div class="card-body">
+            <p>We build Android Apps that never fail you and run smoothly across diverse platforms such as mobile
+              phones, tablets, or +++IoT wearable devices.
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-3">
+        <div class="card text-center  h-100 shadow-lg p-0 bg-body rounded border-0 service">
+          <div class="card-icon p-3">
+            <i class="fab fa-apple fs-1"></i>
+          </div>
+          <div class="card-title">
+            <h6>iOS Development
+            </h6>
+          </div>
+          <div class="card-body">
+            <p>With us, you get reliable, efficient, and fully customizable iOS software solutions that help your
+              business generate more customer engagement.
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-3">
+        <div class="card text-center  h-100 shadow-lg p-0 bg-body rounded border-0 service">
+          <div class="card-icon p-3">
+            <i class="fas fa-coins fs-1"></i>
+          </div>
+          <div class="card-title">
+            <h6>Digital Marketing
+            </h6>
+          </div>
+          <div class="card-body">
+            <p>Get clients interested in your products and services with our superior Digital/Social Media Marketing
+              Services.
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <div class="row me-0 ms-0">
+
+      <div class="col-12 col-sm-12 col-md-6 p-0 mt-5">
+        <div class="card border-0">
+          <img src="client.jpeg" class="img-fluid">
+          <div class="card position-absolute  border-0 w-50" style="background: #ff4255;left: 0;bottom:0;">
+            <div class="card-title">
+              <h4 class="p-1" style="color: white; text-align: center;">Since 2020
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 p-0 mt-5" style="background: #ff4255;">
+        <div class="card border-0 client" style="background: #ff4255; color: white;text-align: center;">
+          <h3 class="mt-3 mt-md-1 mt-lg-3">What Client Say About Us
+          </h3>
+          <div class="client-img">
+            <img src="client-photo.jpeg" class="img-fluid">
+          </div>
+          <h5 class="mt-1 mb-0">Shibu A</h5>
+          <p class="para1 mb-0">Entrepreneur
+
+          </p>
+          <p class="fst-italic pe-5 ps-5 pt-2 pb-2 pe-md-1 ps-md-1 pe-lg-5 ps-lg-5">YesValue houses a dedicated,
+            attentive, responsible, and respectful
+            staff that is
+            highly sensitive to
+            customer needs and can work within a stipulated budget and time-frame. I'm highly satisfied with their
+            services and have been recommending YesValue to all my friends.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="container-fluid p-0 mt-3">
+    <div class="row ms-0 me-0">
+      <div class="col-12 project p-5" style="text-align: center;">
+        <h5>IT Solutions & Projects
+        </h5>
+        <p>Yes Value continues to serve a broad range of clients from diverse backgrounds and industries. We blend
+          loyalty to quality service with a systematic and methodical approach to deliver optimal results.
+
+        </p>
+
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 mt-5">
+        <div class=" card h-100 border-0 shadow-lg project_card  mb-5 bg-white p-0 ">
+          <img src="project-cycle1.jpeg" class="img-fluid">
+          <div class="card-title mb-0 p-2 m-0" style="background:#ff4255;">
+            <div class="row m-0">
+              <div class="col-4  col-sm-4 pt-3 m-0" style="color: white;">
+                <i class="fas fa-laptop fs-1"></i>
+              </div>
+              <div class="col-8  col-sm-8 m-0" style="color: white;">
+                <h5>Online Delivery Software
+                </h5>
+                <h6>Delivery Management
+                </h6>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Our modern and innovative Online Delivery Software Solutions make it easy for you to handle and
+              effectively manage the vast delivery service network.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 mt-5">
+        <div class=" card border-0 h-100 shadow-lg project_card  mb-5 bg-white p-0 " style="min-height: 200px;">
+          <img src="project-cycle2.jpeg" class="img-fluid">
+          <div class="card-title mb-0  p-2 m-0" style="background:#ff4255;">
+            <div class="row m-0">
+              <div class="col-4  col-sm-4 pt-3 m-0" style="color: white;">
+                <i class="fas fa-laptop fs-1"></i>
+              </div>
+              <div class="col-8  col-sm-8 m-0" style="color: white;">
+                <h5>Project Management Software
+
+                </h5>
+                <h6>Project Management
+
+                </h6>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Streamline varied business operations with our single pane of glass management consoles, designed to make
+              management easy and efficient.
+
+
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 mt-5">
+        <div class=" card h-100 border-0 shadow-lg project_card  mb-5 bg-white p-0 ">
+          <img src="project-cycle3.jpeg" class="img-fluid">
+          <div class="card-title mb-0 p-2 m-0" style="background:#ff4255;">
+            <div class="row m-0">
+              <div class="col-4  col-sm-4 pt-3 m-0" style="color: white;">
+                <i class="fas fa-laptop fs-1"></i>
+              </div>
+              <div class="col-8  col-sm-8 m-0" style="color: white;">
+                <h5>Digital Marketing And Branding
+
+                </h5>
+                <h6>Social Media Marketing
+
+                </h6>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Get clients interested in your products and services with our superior Digital/Social Media Marketing
+              Services.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0 mt-5">
+    <div class="row m-0">
+      <div class="col-12 col-sm-12 col-md-12 p-0">
+        <div class="fix-img" style="background-image:url(contact-us.jpeg)">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container p-0">
+    <div class="row p-0 m-0">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 p-0">
+        <div class="card border-0 h-100 solution" style="background:#ff4255;border-radius: 0;">
+          <div class="catd-title pt-3">
+            <h3>Perfect Solutions For Your Business</h3>
+          </div>
+          <div class="card-body">
+            <p>Yes Value delivers to impress and designs to make an impact. We believe in the power of digital
+              technology and how it can be leveraged to accelerate business growth. We are equipped with an exceptional
+              professional team encapsulating industry experts and first-class tools and technologies to craft solutions
+              that amaze.
+
+            </p>
+            <ul class="ps-0 pt-2">
+
+              <p class="mt-1 mb-0 pb-2"><i class="fas fa-check pe-2 text-white"></i>We perform in-depth analysis of your
+                business needs.
+              </p>
+              <p class="mt-1 mb-0 pb-2"><i class="fas fa-check pe-2 text-white"></i>Design software solutions that fit
+                both your budget
+                and objectives.
+
+              </p>
+              <p class="mt-1 mb-0 pb-2"><i class="fas fa-check pe-2 text-white"></i>We perform in-depth analysis of your
+                business needs.
+              </p>
+
+              <p class="mt-1 mb-0 pb-2"><i class="fas fa-check pe-2 text-white"></i>Assured quality, reliability, and
+                efficiency.
+
+              </p>
+
+            </ul>
+            <div class="button4">
+              <a href="#" class="btn" style="color:#ff4255; background: white;border-radius: 0;">GET A QUOTE</a>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 mt-5">
+
+        <div class="card shadow-lg  bg-body rounded border-0 h-100 p-2 pb-3">
+          <div class="contact-form">
+            <div class="catd-body  p-0">
+              <div class="row p-0 m-0">
+
+                <div class="col-12 col-sm-12 col-md-6 mb-3" style="text-align: center;">
+                  <input type="text" class="form-control p-3 w-100" id="exampleInputName" aria-describedby="nameHelp"
+                    placeholder="Your Name">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 mb-3" style="text-align: center;">
+                  <input type="text" class="form-control p-3 w-100" id="exampleInputNumber" aria-describedby="phoneHelp"
+                    placeholder="Your Phone">
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 mb-3" style="text-align: center;">
+                  <input type="email" class="form-control p-3 w-100" id="exampleInputName" aria-describedby="emailHelp"
+                    placeholder="Your email">
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 mb-3" style="text-align: center;">
+                  <input type="text" class="form-control p-3 w-100" id="exampleInputName" aria-describedby="subjectHelp"
+                    placeholder="Subject">
+                </div>
+                <div class="col-12 mb-3" style="text-align: center;">
+                  <input type="text" class="form-control p-3 w-100" id="exampleInputName" aria-describedby="messageHelp"
+                    placeholder="Message" style="min-height: 120px;">
+                </div>
+
+                <div class="col-12 mb-3">
+
+                  <a href="#" class="btn service-card-button2  p-2 border-0"
+                    style="background: #ff4255;color: white;border-radius: 0%;">SEND MESSAGE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer" style="background:#272B36;color: white;">
+
+    <div class="container">
+      <!-- Footer -->
+      <div class="row ms-0 me-0 mt-5 w-100">
+        <footer class="p-0 w-100" style="text-align: justify;">
+          <div class="row me-0 ms-0">
+            <div class="col-12 col-md-3  mb-md-0 mb-4">
+              <!-- Links -->
+              <div class="mt-3 mb-3">
+                <img src="logo.png" class="img-fluid m-auto" style="width: 65%;">
+              </div>
+              <p style="text-align:start;"><i class="fas fa-map-marker-alt me-3"></i>#613, Choolavayal, Kunnamangalam,
+                Calicut,Kerala
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                support@yesvalue.in
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +91-7736151724</p>
+            </div>
+
+
+            <div class="col-6 col-md-3  mb-4 mt-3">
+              <!-- Links -->
+              <h6 class="fw-bold mb-4">
+                Quick Link
+
+              </h6>
+              <p><i class="fas fa-greater-than me-3"></i>Home</a></p>
+              <p><i class="fas fa-greater-than me-3"></i>Service</a></p>
+              <p><i class="fas fa-greater-than me-3"></i>About Us</a></p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-6 col-md-3 mb-4">
+              <!-- Links -->
+              <h6 class="fw-bold mb-4 mt-3">
+                Other Pages
+              </h6>
+              <p><i class="fas fa-greater-than me-3"></i>Product</a></p>
+              <p><i class="fas fa-greater-than me-3"></i>Contact</a></p>
+
+            </div>
+            <div class="col-12 col-sm-3 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 mt-3">
+                CONNECT
+              </h6>
+              <p><i class="fab fa-facebook-f me-3"></i></i>Facebook</a></p>
+              <p><i class="fab fa-youtube me-3"></i>YouTube</a></p>
+              <p><i class="fab fa-linkedin-in me-3"></i>LinkedIn</a></p>
+              <p><i class="fab fa-twitter me-3"></i>Twitter</a></p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+      </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="p-4  ps-0 pe-0 d-flex flex-row justify-content-between"
+        style="background: #272B36;color: white; border-top: 1px solid white;">
+        <div>
+          <a style="color: rgb(86, 83, 83); text-decoration: none;" href="linkedin.com/in/grace-joseph-156379154">Web developer Eternia</a>
+        </div>
+        <div>
+          <a style="color: rgb(86, 83, 83);"> Eternia digital solution demo  template
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    </footer>
+  </div>
+  <!-- Footer -->
+</body>
+
+</html>
